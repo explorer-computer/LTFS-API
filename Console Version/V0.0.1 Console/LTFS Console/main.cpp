@@ -1,3 +1,4 @@
+/*. Copyright (C) 2022  explorer-computer bilibili:https://space.bilibili.com/496840793. */
 #include <Windows.h>
 #include <iostream>
 #include <stdio.h>
@@ -6,52 +7,52 @@ HANDLE hTape0;
 void OutputError(int EC){
 	switch(EC){
 		case ERROR_BEGINNING_OF_MEDIA:
-			printf("��ý�忪ʼ���֮ǰ�������ݵĳ���ʧ��\n");
+			printf("在媒体开始标记之前访问数据的尝试失败\n");
 			break;
 		case ERROR_BUS_RESET:
-			printf("�������ϼ�⵽��λ����\n");
+			printf("在总线上检测到复位条件\n");
 			break;
 		case ERROR_DEVICE_NOT_PARTITIONED:
-			printf("���شŴ�ʱ�Ҳ���������Ϣ\n");
+			printf("加载磁带时找不到分区信息\n");
 			break;
 		case ERROR_DEVICE_REQUIRES_CLEANING:
-			printf("�Ŵ����ܹ���������Ҫ��࣬��������ȷʵ��Ҫ���\n");
+			printf("磁带机能够报告它需要清洁，并报告它确实需要清洁\n");
 			break;
 		case ERROR_END_OF_MEDIA:
-			printf("�����������е���Ŵ�ĩ�˱��\n");
+			printf("在手术过程中到达磁带末端标记\n");
 			break;
 		case ERROR_FILEMARK_DETECTED:
-			printf("�����ڼ䵽���ļ���ǡ�\n");
+			printf("操作期间到达文件标记。\n");
 			break;
 		case ERROR_INVALID_BLOCK_LENGTH:
-			printf("��������е��´Ŵ��ϵĿ��С����ȷ\n");
+			printf("多卷分区中的新磁带上的块大小不正确\n");
 			break;
 		case ERROR_MEDIA_CHANGED:
-			printf("�������еĴŴ��ѱ��������Ƴ�\n");
+			printf("驱动器中的磁带已被更换或移除\n");
 			break;
 		case ERROR_NO_DATA_DETECTED:
-			printf("�ڲ����ڼ䵽�����ݽ������\n");
+			printf("在操作期间到达数据结束标记\n");
 			break;
 		case ERROR_NO_MEDIA_IN_DRIVE:
-			printf("��������û��ý��\n");
+			printf("驱动器中没有媒体\n");
 			break;
 		case ERROR_NOT_SUPPORTED:
-			printf("�Ŵ���������֧������Ĺ���");
+			printf("磁带驱动程序不支持请求的功能");
 			break;
 		case ERROR_PARTITION_FAILURE:
-			printf("�޷��ԴŴ����з���\n");
+			printf("无法对磁带进行分区\n");
 			break;
 		case ERROR_SETMARK_DETECTED:
-			printf("�ڲ����ڼ�ﵽ���趨���\n");
+			printf("在操作期间达到了设定标记\n");
 			break;
 		case ERROR_UNABLE_TO_LOCK_MEDIA:
-			printf("����������������ʧ��\n");
+			printf("尝试锁定弹出机制失败\n");
 			break;
 		case ERROR_UNABLE_TO_UNLOAD_MEDIA:
-			printf("ж�شŴ��ĳ���ʧ��\n");
+			printf("卸载磁带的尝试失败\n");
 			break;
 		case ERROR_WRITE_PROTECT:
-			printf("ý����д������\n");
+			printf("媒体是写保护的\n");
 			break;
 		case NO_ERROR:
 			printf("NO ERROR\n");
