@@ -30,3 +30,4 @@ rename重命名磁带中的文件
 move将磁带中的文件移到磁带的其他路径
 
 Version 0.1.0(Tape Console)
+Copyright (C) 2022  explorer-computer
