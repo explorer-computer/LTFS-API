@@ -31,3 +31,4 @@ unlock解锁磁带弹出机制
 erasetape擦除磁带。(erasetype为0时:在开头写一个数据结束标示 为1时,从头到尾擦除)
 
 Version 0.0.1(Tape Console)
+Copyright (C) 2022  explorer-computer
