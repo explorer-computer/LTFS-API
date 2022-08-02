@@ -18,3 +18,4 @@ GNU开源协议
 8月10日发布命令行版GTFS
 
 预计8月30日之前发布图形化版GTFS!
+Copyright (C) 2022  explorer-computer
